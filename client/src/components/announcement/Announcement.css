@@ -1,0 +1,41 @@
+.announcement-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: teal;
+    font-size: 14px;
+    color: azure;
+    top: 0;
+    left: 0;
+    position: fixed;
+    padding: 10px 20px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);;
+text-align: center;
+cursor: pointer;
+}
+
+.announcement-container h1, .announcement-container p{
+    margin: 0;
+    padding: 0 10px;
+  
+}
+
+.announcement-container h1:hover,.announcement-container p:hover{
+    color: black;
+    transform: scale(1.2);
+}
+
+@media(max-width: 600px) {
+    .announcement-container{
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}
+
+@media(max-width: 400px) {
+    .announcement-container{
+        font-size: 10px;
+        padding: 6px 12px;
+    }
+}

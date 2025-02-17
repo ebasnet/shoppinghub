@@ -1,0 +1,159 @@
+/* Navbar container styles */
+.navbar-container {
+    position: relative;
+    top: 50px; /* Add space for the announcement bar */
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for navbar */
+    cursor: pointer; /* Make cursor pointer for all interactive elements */
+  z-index: 1000;
+}
+
+  
+  /* Navbar wrapper styles */
+  .navbar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 60px;
+  }
+  
+  /* Left section of the navbar */
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  /* Language section */
+  .navbar-language {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Search container styles */
+  .navbar-searchContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Search input styling */
+  .navbar-input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    width: 200px;
+  }
+  
+  .navbar-input:focus {
+    border-color: teal;
+  }
+  
+  /* Search icon styling */
+  .icon {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  /* Center section of the navbar */
+  .navbar-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Logo styling */
+  .navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .navbar-logo span {
+    color: teal;
+  }
+  
+  /* Right section of the navbar */
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Menu items (Register, Login, etc.) */
+  .navbar-menuItem {
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .navbar-menuItem:hover {
+    color: teal; /* Changes color on hover */
+  }
+  
+  /* Shopping cart icon container */
+  .navbar-right .icon {
+    font-size: 25px;
+    color: #333;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  /* Cart badge */
+  .cart-badge {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .navbar-wrapper {
+      padding: 0 10px; /* Reduced padding on smaller screens */
+    }
+  
+    .navbar-input {
+      width: 150px; /* Reduce width on small screens */
+    }
+  
+    .navbar-logo {
+      font-size: 20px; /* Smaller font size for logo */
+    }
+  
+    .navbar-right {
+      gap: 15px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .navbar-left {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-searchContainer {
+      width: 100%;
+    }
+  
+    .navbar-menuItem {
+      font-size: 12px; /* Adjust font size on smaller screens */
+    }
+  }
+  
