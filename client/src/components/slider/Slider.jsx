@@ -1,15 +1,33 @@
 import "./Slider.css";
+
 import { IoMdArrowDropleft, IoMdArrowDropright } from "react-icons/io";
 import { sliderItems } from "../../data/Data";
+import Image from "../Image";
+import { useState } from "react";
 
 const Slider = () => {
+  const [slideIndex, setSlideIndex] = useState(0);
+  const handleClick = (direction) => {
+    if (direction === "left") {
+      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2);
+    } else {
+      setSlideIndex(slideIndex < 2 ? setSlideIndex + 1 : 0);
+    }
+  };
   return (
     <div className="slider-container">
-      <div className="arrow left">
+      <div
+        className="arrow left"
+        direction="left"
+        onClick={() => handleClick("left")}
+      >
         <IoMdArrowDropleft className="icon" />
       </div>
 
-      <div className="slider-wrapper">
+      <div
+        className="slider-wrapper"
+        style={{ transform: `translatex(${slideIndex * -100}vw)` }}
+      >
         {sliderItems.map((item) => {
           return (
             <div
@@ -18,7 +36,7 @@ const Slider = () => {
               style={{ backgroundColor: `#${item.bg}` }}
             >
               <div className="img-container">
-                <img src={item.img} alt={item.title} className="img" />
+                <Image imgSrc={item.img} className="img" alt={item.title} />
               </div>
               <div className="info-container">
                 <h1 className="title">{item.title}</h1>
@@ -30,7 +48,11 @@ const Slider = () => {
         })}
       </div>
 
-      <div className="arrow right">
+      <div
+        className="arrow right"
+        direction="right"
+        onClick={() => handleClick("right")}
+      >
         <IoMdArrowDropright className="icon" />
       </div>
     </div>
