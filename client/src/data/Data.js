@@ -1,10 +1,13 @@
-import slider1 from "../assets/slider1.png";
+// import slider1 from "../assets/slider1.png";
 import slider2 from "../assets/slider2.png";
 import slider3 from "../assets/slider3.png";
+// import slider4 from "../assets/slider4.png";
+import slider7 from "../assets/slider7.png";
 
 import category1 from "../assets/category1.jpg";
 import category2 from "../assets/category2.jpg";
 import category3 from "../assets/category3.jpg";
+import category5 from "../assets/category5.jpg";
 
 import products1 from "../assets/products1.png";
 import products2 from "../assets/products2.png";
@@ -27,7 +30,7 @@ import products16 from "../assets/products16.png";
 export const sliderItems = [
   {
     id: 1,
-    img: slider1,
+    img: slider7,
     title: "Fall Collection",
     desc: "Embrace the warmth of cozy layers",
     bg: "f5fafd",
@@ -51,18 +54,18 @@ export const sliderItems = [
 export const categories = [
   {
     id: 1,
-    img: category1,
-    title: "Fall Collection",
+    img: category5,
+    title: "Cozy Fall Collection",
   },
   {
     id: 2,
     img: category2,
-    title: "Spring Collection",
+    title: "Floral Spring Collection",
   },
   {
-    id: 1,
+    id: 3,
     img: category3,
-    title: "Summer Essentials",
+    title: "Summer Essentials Fashion",
   },
 ];
 
@@ -70,26 +73,44 @@ export const newArrivals = [
   {
     id: 1,
     img: products1,
-    title: "Casual Dress Fall",
-    price: 34.99,
+    title: "Autumn Casual Dress",
+    price: 1000,
   },
   {
     id: 2,
     img: products2,
-    title: "Summer dress",
-    price: 22.99,
+    title: "Boho Summer Dress",
+    price: 1500,
   },
   {
     id: 3,
     img: products3,
-    title: "Essential top",
-    price: 49.99,
+    title: "Comfy Basic Top",
+    price: 1200,
   },
   {
     id: 4,
     img: products4,
-    title: "spring going out",
-    price: 45.99,
+    title: "Spring Vibes Top",
+    price: 1300,
+  },
+  {
+    id: 5,
+    img: products10,
+    title: "Spring Floral Dress",
+    price: 1600,
+  },
+  {
+    id: 6,
+    img: products9,
+    title: "Casual Jacket",
+    price: 2000,
+  },
+  {
+    id: 7,
+    img: products11,
+    title: "Chic Blazer",
+    price: 1800,
   },
 ];
 
@@ -97,26 +118,38 @@ export const bestsellers = [
   {
     id: 5,
     img: products5,
-    title: "faux suede jacket",
-    price: 54.99,
+    title: "Suede Leather Jacket",
+    price: 3500,
   },
   {
     id: 6,
     img: products6,
     title: "Puffer Jacket",
-    price: 72.99,
+    price: 4000,
   },
   {
     id: 7,
     img: products7,
-    title: "Wool Coat",
-    price: 99.99,
+    title: "Warm Wool Coat",
+    price: 5000,
   },
   {
     id: 8,
     img: products8,
-    title: "Lightweight Puffer Jacket",
-    price: 65.99,
+    title: "Winter Puffer Coat",
+    price: 4500,
+  },
+  {
+    id: 9,
+    img: products12,
+    title: "Lightweight Jacket",
+    price: 2500,
+  },
+  {
+    id: 10,
+    img: products13,
+    title: "Urban Chic Puffer",
+    price: 3000,
   },
 ];
 
@@ -124,97 +157,132 @@ export const allProducts = [
   {
     id: 1,
     img: products1,
-    title: "Casual Dress Fall",
-    price: 34.99,
+    title: "Autumn Casual Dress",
+    price: 1000,
   },
   {
     id: 2,
     img: products2,
-    title: "Summer dress",
-    price: 22.99,
+    title: "Boho Summer Dress",
+    price: 1500,
   },
   {
     id: 3,
     img: products3,
-    title: "Essential top",
-    price: 49.99,
+    title: "Comfy Basic Top",
+    price: 1200,
   },
   {
     id: 4,
     img: products4,
-    title: "spring going out",
-    price: 45.99,
+    title: "Spring Vibes Top",
+    price: 1300,
   },
   {
     id: 5,
     img: products5,
-    title: "faux suede jacket",
-    price: 54.99,
+    title: "Suede Leather Jacket",
+    price: 3500,
   },
   {
     id: 6,
     img: products6,
     title: "Puffer Jacket",
-    price: 72.99,
+    price: 4000,
   },
   {
     id: 7,
     img: products7,
-    title: "Wool Coat",
-    price: 99.99,
+    title: "Warm Wool Coat",
+    price: 5000,
   },
   {
     id: 8,
     img: products8,
-    title: "Lightweight Puffer Jacket",
-    price: 65.99,
+    title: "Winter Puffer Coat",
+    price: 4500,
   },
   {
     id: 9,
     img: products9,
-    title: "Cardigan Sweaters",
-    price: 32.99,
+    title: "Casual Cardigans",
+    price: 2000,
   },
   {
     id: 10,
     img: products10,
-    title: "long sleeve top",
-    price: 24.99,
+    title: "Long Sleeve Sweatshirt",
+    price: 1700,
   },
   {
     id: 11,
     img: products11,
-    title: "long fur coat",
-    price: 69.99,
+    title: "Long Fur Coat",
+    price: 2200,
   },
   {
     id: 12,
     img: products12,
-    title: "sweatshirt",
-    price: 25.99,
+    title: "Basic Sweatshirt",
+    price: 1500,
   },
   {
     id: 13,
     img: products13,
-    title: "long jacket",
-    price: 64.99,
+    title: "Long Padded Jacket",
+    price: 3000,
   },
   {
     id: 14,
     img: products14,
-    title: "long vest",
-    price: 52.99,
+    title: "Long Winter Vest",
+    price: 2300,
   },
   {
     id: 15,
     img: products15,
-    title: "winter suits",
-    price: 89.99,
+    title: "Winter Coats Collection",
+    price: 5500,
   },
   {
     id: 16,
     img: products16,
-    title: "t-shirt",
-    price: 20.99,
+    title: "Basic Casual Tee",
+    price: 1100,
+  },
+];
+
+export const footerLinks = [
+  {
+    id: 1,
+    title: "Home",
+  },
+  {
+    id: 2,
+    title: "Cart",
+  },
+  {
+    id: 3,
+    title: "Men's Fashion",
+  },
+  {
+    id: 4,
+    title: "Women's Fashion",
+  },
+  {
+    id: 5,
+    title: "Accessories",
+  },
+  {
+    id: 6,
+    title: "My Account",
+  },
+  {
+    id: 7,
+    title: "Order Tracking",
+  },
+  {
+    id: 8,
+    title: "Wishlist",
   },
 ];
