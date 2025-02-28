@@ -1,0 +1,82 @@
+/* src/pages/Login/login.css */
+
+/* Container for the login page */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4; /* Light background */
+  }
+  
+  /* Wrapper for the form */
+  .login-wrapper {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Input field styles */
+  .input-box {
+    margin-bottom: 15px;
+  }
+  
+  .input-box input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Add placeholder text styles */
+  .input-box input::placeholder {
+    color: #aaa;  /* Light gray color for placeholder */
+    font-size: 14px; /* Optional: Adjust placeholder text size */
+  }
+  
+  /* Placeholder focus color */
+  .input-box input:focus::placeholder {
+    color: #007bff;  /* Change placeholder color on focus */
+  }
+  
+  .input-box input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Button styles */
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 480px) {
+    .login-wrapper {
+      width: 90%;
+      padding: 20px;
+    }
+  }
+  

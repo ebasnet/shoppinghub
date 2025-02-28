@@ -1,16 +1,15 @@
-// import slider1 from "../assets/slider1.png";
+import slider1 from "../assets/slider1.png";
 import slider2 from "../assets/slider2.png";
 import slider3 from "../assets/slider3.png";
 // import slider4 from "../assets/slider4.png";
-import slider7 from "../assets/slider7.png";
 
 import category1 from "../assets/category1.jpg";
 import category2 from "../assets/category2.jpg";
 import category3 from "../assets/category3.jpg";
-import category5 from "../assets/category5.jpg";
+// import category5 from "../assets/category5.jpg";
 
 import products1 from "../assets/products1.png";
-import products2 from "../assets/products2.png";
+import products2 from "../assets/products2.jpg";
 import products3 from "../assets/products3.png";
 
 import products4 from "../assets/products4.png";
@@ -26,23 +25,24 @@ import products13 from "../assets/products13.png";
 import products14 from "../assets/products14.png";
 import products15 from "../assets/products15.png";
 import products16 from "../assets/products16.png";
-import products20 from "../assets/products20.jpg";
+// import products20 from "../assets/products20.jpg";
 
 export const sliderItems = [
   {
     id: 1,
-    img: slider7,
-    title: "Fall Collection",
-    desc: "Embrace the warmth of cozy layers",
+    img: slider1,
+    title: "Spring Collection",
+    desc: "Fresh florals and light fabrics for the season",
     bg: "f5fafd",
   },
   {
     id: 2,
     img: slider2,
-    title: "Spring Collection",
-    desc: "Fresh florals and light fabrics for the season",
+    title: "Fall Collection",
+    desc: "Embrace the warmth of cozy layers",
     bg: "f5fafd",
   },
+
   {
     id: 3,
     img: slider3,
@@ -55,7 +55,7 @@ export const sliderItems = [
 export const categories = [
   {
     id: 1,
-    img: category5,
+    img: category1,
     title: "Cozy Fall Collection",
   },
   {
@@ -79,7 +79,7 @@ export const newArrivals = [
   },
   {
     id: 2,
-    img: products20,
+    img: products2,
     title: "Assymetrical Wide Leg Pants",
     price: 3500,
   },
@@ -93,7 +93,7 @@ export const newArrivals = [
     id: 4,
     img: products4,
     title: "Comfy Skirt",
-    price: 200,
+    price: 2000,
   },
   {
     id: 5,
@@ -158,98 +158,130 @@ export const allProducts = [
   {
     id: 1,
     img: products1,
-    title: "Autumn Casual Dress",
-    price: 1000,
+    title: "Chic Blazer",
+    price: 4000,
+    description:
+      "A stylish and modern blazer designed for a chic and sophisticated look. Perfect for both work and casual outings.",
   },
   {
     id: 2,
     img: products2,
-    title: "Boho Summer Dress",
-    price: 1500,
+    title: "Assymetrical Wide Leg Pants",
+    price: 3500,
+    description:
+      "These asymmetrical wide-leg pants are a statement piece, offering a unique twist on classic trousers for a bold look.",
   },
   {
     id: 3,
     img: products3,
-    title: "Comfy Basic Top",
-    price: 1200,
+    title: "Ruffle One Sided Top",
+    price: 1900,
+    description:
+      "A playful and elegant top with a ruffle detail on one side, offering a unique asymmetrical design.",
   },
   {
     id: 4,
     img: products4,
-    title: "Spring Vibes Top",
-    price: 1300,
+    title: "Comfy Skirt",
+    price: 2000,
+    description:
+      "A comfy and stylish skirt that pairs well with casual and formal looks. Great for everyday wear or special occasions.",
   },
   {
     id: 5,
     img: products5,
-    title: "Suede Leather Jacket",
-    price: 3500,
+    title: "Blazer Skirt Set",
+    price: 6000,
+    description:
+      "A coordinated set that includes a sharp blazer and a matching skirt, perfect for a professional yet stylish appearance.",
   },
   {
     id: 6,
     img: products6,
-    title: "Puffer Jacket",
-    price: 4000,
+    title: "Bow Top",
+    price: 2200,
+    description:
+      "A charming top with a playful bow design. The perfect mix of elegance and fun, ideal for casual and semi-formal events.",
   },
   {
     id: 7,
     img: products7,
-    title: "Warm Wool Coat",
-    price: 5000,
+    title: "Cute Upshoulder Top",
+    price: 2200,
+    description:
+      "A trendy off-shoulder top that combines cuteness with style, perfect for a night out or weekend wear.",
   },
   {
     id: 8,
     img: products8,
-    title: "Winter Puffer Coat",
-    price: 4500,
+    title: "Ballerina Top",
+    price: 3500,
+    description:
+      "A soft and feminine ballerina-inspired top, designed to be lightweight and flowy for maximum comfort.",
   },
   {
     id: 9,
     img: products9,
-    title: "Casual Cardigans",
-    price: 2000,
+    title: "Wide Leg Jeans",
+    price: 4000,
+    description:
+      "Classic wide-leg jeans that offer comfort and style with a vintage touch. Perfect for a relaxed, casual look.",
   },
   {
     id: 10,
     img: products10,
-    title: "Long Sleeve Sweatshirt",
-    price: 1700,
+    title: "Lining Shirt",
+    price: 3000,
+    description:
+      "A versatile lining shirt with a sleek, modern design. Great for layering or wearing alone.",
   },
   {
     id: 11,
     img: products11,
-    title: "Long Fur Coat",
+    title: "Shrug",
     price: 2200,
+    description:
+      "A chic and lightweight shrug that adds a stylish layer to any outfit. Ideal for cooler evenings or adding flair to your look.",
   },
   {
     id: 12,
     img: products12,
-    title: "Basic Sweatshirt",
-    price: 1500,
+    title: "Cropped Pink Blazer",
+    price: 4000,
+    description:
+      "A bold cropped blazer in a lovely pink hue, offering a fresh take on classic professional wear.",
   },
   {
     id: 13,
     img: products13,
-    title: "Long Padded Jacket",
+    title: "Silk Ruched Skirt",
     price: 3000,
+    description:
+      "A luxurious silk skirt with a ruched detail for added texture and style. Perfect for formal events or a night out.",
   },
   {
     id: 14,
     img: products14,
     title: "Long Winter Vest",
     price: 2300,
+    description:
+      "A warm and cozy long winter vest, designed to keep you stylish and comfortable in colder weather.",
   },
   {
     id: 15,
     img: products15,
-    title: "Winter Coats Collection",
-    price: 5500,
+    title: "Winter Sets",
+    price: 4000,
+    description:
+      "A stylish winter set including matching pieces, perfect for layering and staying warm while looking great.",
   },
   {
     id: 16,
     img: products16,
     title: "Basic Casual Tee",
     price: 1100,
+    description:
+      "A simple and comfortable casual tee that is a wardrobe staple. Perfect for everyday wear.",
   },
 ];
 

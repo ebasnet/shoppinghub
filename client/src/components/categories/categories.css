@@ -14,7 +14,7 @@
   
   .category-container:hover {
     opacity: 0.5;
-    font-size: larger;
+    font-size: large;
   }
   
   .category-container img {

@@ -1,7 +1,14 @@
 import { CiSearch, CiShoppingCart } from "react-icons/ci";
 import styles from "./products.module.css"; // Importing the CSS module
+import { useNavigate } from "react-router";
 
 function Products({ items, heading }) {
+  const navigate = useNavigate();
+
+  const handleViewDetails = (id) => {
+    navigate(`/products/${id}`);
+  };
+
   return (
     <div>
       <h1 className={styles.heading}>{heading}</h1>
@@ -12,6 +19,7 @@ function Products({ items, heading }) {
               src={item.img}
               alt={item.title}
               className={styles.productImage}
+              onClick={() => handleViewDetails(item.id)}
             />
             <div className={styles.productDesc}>
               <h3>{item.title}</h3>
@@ -21,7 +29,10 @@ function Products({ items, heading }) {
               <button className={styles.icon}>
                 <CiShoppingCart /> Add To Cart
               </button>
-              <button className={styles.icon}>
+              <button
+                className={styles.icon}
+                onClick={() => handleViewDetails(item.id)}
+              >
                 <CiSearch /> View Details
               </button>
             </div>

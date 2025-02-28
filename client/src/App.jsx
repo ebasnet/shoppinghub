@@ -1,25 +1,23 @@
-import Categories from "./components/categories/Categories";
-import Footer from "./components/footer/Footer";
-import Navbar from "./components/navbar/Navbar";
-import NewsLetter from "./components/newsletter/NewsLetter";
-import BestSellers from "./components/products/BestSellers";
-import NewArrival from "./components/products/NewArrival";
-import Slider from "./components/slider/Slider";
 import Home from "./pages/home/Home";
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router";
+import Register from "./pages/register/Register";
+import Login from "./pages/login/Login";
+import AllProducts from "./pages/all products/AllProducts";
+import SingleProduct from "./pages/singleProduct/SingleProduct";
 
-const App = () => {
+function App() {
   return (
-    <div>
-      <Home />
-      <Navbar />
-      <Slider />
-      <Categories />
-      <NewArrival />
-      <BestSellers />
-      <NewsLetter />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/products" element={<AllProducts />} />
+        <Route path="/products/:id" element={<SingleProduct />} />
+      </Routes>
+    </Router>
   );
-};
+}
 
 export default App;
