@@ -1,7 +1,11 @@
 import { useDispatch, useSelector } from "react-redux";
 import Navbar from "../../components/navbar/Navbar";
 import { BiShoppingBag } from "react-icons/bi";
-import { decreaseQuantity, removeFromCart } from "../../redux/cartSlice";
+import {
+  decreaseQuantity,
+  removeFromCart,
+  increaseQuantity,
+} from "../../redux/cartSlice";
 import { IoClose } from "react-icons/io5";
 import Footer from "../../components/footer/Footer";
 import "./Cart.css";
