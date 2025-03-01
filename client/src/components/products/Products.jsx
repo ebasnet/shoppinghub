@@ -1,8 +1,14 @@
 import { CiSearch, CiShoppingCart } from "react-icons/ci";
 import styles from "./products.module.css"; // Importing the CSS module
 import { useNavigate } from "react-router";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../redux/cartSlice";
 
 function Products({ items, heading }) {
+  const dispatch = useDispatch();
+  const handleAddToCart = (item) => {
+    dispatch(addToCart(item));
+  };
   const navigate = useNavigate();
 
   const handleViewDetails = (id) => {
@@ -26,7 +32,10 @@ function Products({ items, heading }) {
               <span>Rs.{item.price}</span>
             </div>
             <div className={styles.productInfo}>
-              <button className={styles.icon}>
+              <button
+                className={styles.icon}
+                onClick={() => handleAddToCart(item)}
+              >
                 <CiShoppingCart /> Add To Cart
               </button>
               <button
