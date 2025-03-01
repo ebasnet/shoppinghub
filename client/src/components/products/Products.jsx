@@ -1,5 +1,5 @@
 import { CiSearch, CiShoppingCart } from "react-icons/ci";
-import styles from "./products.module.css"; // Importing the CSS module
+import styles from "./products.module.css";
 import { useNavigate } from "react-router";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/cartSlice";

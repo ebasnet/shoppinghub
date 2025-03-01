@@ -1,21 +1,21 @@
 import { IoMdSend } from "react-icons/io";
-import "./newsLetter.css";
+import styles from "./NewsLetter.module.css"; // Assuming you're using module CSS
 
 function NewsLetter() {
   return (
-    <div className="newsletter-container">
-      <h1 className="newsletter-title">NewsLetter</h1>
-      <div className="newsletter-desc">
-        updates for your new fashion ideas!!!!!
+    <div className={styles.newsletterContainer}>
+      <h1 className={styles.newsletterTitle}>NewsLetter</h1>
+      <div className={styles.newsletterDesc}>
+        Updates for your new fashion ideas!!!!!
       </div>
-      <div className="input-container">
+      <div className={styles.inputContainer}>
         <input
           type="text"
-          className="newsletter-input"
+          className={styles.newsletterInput}
           placeholder="Your Email"
         />
-        <button className="newsletter-button">
-          <IoMdSend className="icon" />
+        <button className={styles.newsletterButton}>
+          <IoMdSend className={styles.icon} />
         </button>
       </div>
     </div>

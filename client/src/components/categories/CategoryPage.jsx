@@ -1,29 +1,26 @@
-import { useParams, Link, useNavigate } from "react-router-dom"; // useNavigate is needed for navigation
+import { useParams, useNavigate } from "react-router-dom";
 import { allProducts } from "../../data/Data";
-import { CiShoppingCart, CiSearch } from "react-icons/ci"; // For the buttons
+import { CiShoppingCart, CiSearch } from "react-icons/ci";
 import Navbar from "../navbar/Navbar";
-import { useDispatch } from "react-redux"; // Import the useDispatch hook
-import { addToCart } from "../../redux/cartSlice"; // Import the addToCart action
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../redux/cartSlice";
 import "./categoryPage.css";
 
 const CategoryPage = () => {
-  const { categoryName } = useParams(); // Get the category name from the URL
-  const dispatch = useDispatch(); // Create the dispatch function
-  const navigate = useNavigate(); // Hook for navigation
+  const { categoryName } = useParams();
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
 
-  // Filter products based on category
   const categoryProducts = allProducts.filter(
     (product) => product.category === categoryName
   );
 
-  // Function to handle adding products to the cart
   const handleAddToCart = (item) => {
-    dispatch(addToCart(item)); // Dispatch the addToCart action to Redux
+    dispatch(addToCart(item));
   };
 
-  // Function to navigate to product details page
   const handleViewDetails = (id) => {
-    navigate(`/products/${id}`); // Navigate to the product details page
+    navigate(`/products/${id}`);
   };
 
   return (
@@ -41,13 +38,13 @@ const CategoryPage = () => {
               <div className="product-info">
                 <button
                   className="icon"
-                  onClick={() => handleAddToCart(product)} // Trigger the dispatch on click
+                  onClick={() => handleAddToCart(product)}
                 >
                   <CiShoppingCart /> Add To Cart
                 </button>
                 <button
                   className="icon"
-                  onClick={() => handleViewDetails(product.id)} // Pass correct product id
+                  onClick={() => handleViewDetails(product.id)}
                 >
                   <CiSearch /> View Details
                 </button>
