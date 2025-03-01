@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoSearch } from "react-icons/io5";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import styles from "./Navbar.module.css"; // Import the CSS module
 
-const Navbar = ({ setShowLogin, setShowInput }) => {
+const Navbar = ({ setShowLogin }) => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false); // State to manage dropdown visibility
   const cartItems = useSelector((state) => state.cart.cartItems);
   const totalItems = cartItems.length;
+
+  // Toggle dropdown visibility
+  const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
 
   return (
     <div className={styles["navbar-container"]}>
@@ -31,6 +35,33 @@ const Navbar = ({ setShowLogin, setShowInput }) => {
           </div>
         </Link>
         <div className={styles["navbar-right"]}>
+          <div className={styles["navbar-menuItem"]}>
+            <button onClick={toggleDropdown}>Products</button>
+            {/* Dropdown Menu */}
+            {isDropdownOpen && (
+              <div className={styles["dropdown-menu"]}>
+                <Link
+                  to="/category/Cozy Fall Collection"
+                  className={styles["dropdown-item"]}
+                >
+                  Cozy Fall
+                </Link>
+                <Link
+                  to="/category/Floral Spring Collection"
+                  className={styles["dropdown-item"]}
+                >
+                  Floral Spring
+                </Link>
+                <Link
+                  to="/category/Summer Essentials Fashion"
+                  className={styles["dropdown-item"]}
+                >
+                  Summer Essentials
+                </Link>
+              </div>
+            )}
+          </div>
+
           <div className={styles["navbar-menuItem"]}>
             <button onClick={() => setShowLogin(true)}>Sign-in</button>
           </div>
