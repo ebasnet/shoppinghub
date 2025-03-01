@@ -3,8 +3,9 @@ import { IoSearch } from "react-icons/io5";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { Link } from "react-router-dom"; // Correct import for Link
 import { useSelector } from "react-redux";
+import { useState } from "react";
 
-const Navbar = () => {
+const Navbar = ({ setShowLogin, setShowInput }) => {
   const cartItems = useSelector((state) => state.cart.cartItems);
   const totalItems = cartItems.length;
   return (
@@ -25,13 +26,13 @@ const Navbar = () => {
           </div>
         </Link>
         <div className="navbar-right">
-          <Link to="/register">
+          {/* <Link to="/register">
             <div className="navbar-menuItem">Register</div>
-          </Link>
+          </Link> */}
+          <div className="navbar-menuItem">
+            <button onClick={() => setShowLogin(true)}>Sign-in</button>
+          </div>
 
-          <Link to="/login">
-            <div className="navbar-menuItem">Login</div>
-          </Link>
           <Link to="/cart">
             <div className="navbar-menuItem">
               <MdOutlineShoppingCart className="icon" />

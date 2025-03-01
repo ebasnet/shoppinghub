@@ -5,8 +5,11 @@ import { decreaseQuantity, removeFromCart } from "../../redux/cartSlice";
 import { IoClose } from "react-icons/io5";
 import Footer from "../../components/footer/Footer";
 import "./Cart.css";
+import Login from "../login/Login";
 
+import { useState } from "react";
 function Cart() {
+  const [showLogin, setShowLogin] = useState(false);
   const cartItems = useSelector((state) => state.cart.cartItems);
   console.log(cartItems);
   const dispatch = useDispatch();
@@ -17,7 +20,8 @@ function Cart() {
   );
   return (
     <div>
-      <Navbar />
+      {showLogin ? <Login setShowLogin={setShowLogin} /> : <></>}
+      <Navbar setShowLogin={setShowLogin} />
 
       <div className="cart-container">
         <div className="cart-title-container">
