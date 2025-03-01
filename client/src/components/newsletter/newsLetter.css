@@ -49,19 +49,19 @@
   
   .newsletter-button {
     background-color: teal;
-    color: white;
+    
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    /* transition: background-color 0.3s; */
   }
   
-  .newsletter-button:hover {
-    background-color:rgb(91, 131, 131);
-  }
+
+ 
   
   .icon {
     font-size: 1.3rem;
+    color: white;
   }
   
