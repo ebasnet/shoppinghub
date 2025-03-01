@@ -162,6 +162,7 @@ export const allProducts = [
     price: 4000,
     description:
       "A stylish and modern blazer designed for a chic and sophisticated look. Perfect for both work and casual outings.",
+    category: "Cozy Fall Collection", // Category added
   },
   {
     id: 2,
@@ -170,6 +171,7 @@ export const allProducts = [
     price: 3500,
     description:
       "These asymmetrical wide-leg pants are a statement piece, offering a unique twist on classic trousers for a bold look.",
+    category: "Cozy Fall Collection", // Category added
   },
   {
     id: 3,
@@ -178,6 +180,7 @@ export const allProducts = [
     price: 1900,
     description:
       "A playful and elegant top with a ruffle detail on one side, offering a unique asymmetrical design.",
+    category: "Floral Spring Collection", // Category added
   },
   {
     id: 4,
@@ -186,6 +189,7 @@ export const allProducts = [
     price: 2000,
     description:
       "A comfy and stylish skirt that pairs well with casual and formal looks. Great for everyday wear or special occasions.",
+    category: "Floral Spring Collection", // Category added
   },
   {
     id: 5,
@@ -194,6 +198,7 @@ export const allProducts = [
     price: 6000,
     description:
       "A coordinated set that includes a sharp blazer and a matching skirt, perfect for a professional yet stylish appearance.",
+    category: "Summer Essentials Fashion", // Category added
   },
   {
     id: 6,
@@ -202,6 +207,7 @@ export const allProducts = [
     price: 2200,
     description:
       "A charming top with a playful bow design. The perfect mix of elegance and fun, ideal for casual and semi-formal events.",
+    category: "Summer Essentials Fashion", // Category added
   },
   {
     id: 7,
@@ -210,6 +216,7 @@ export const allProducts = [
     price: 2200,
     description:
       "A trendy off-shoulder top that combines cuteness with style, perfect for a night out or weekend wear.",
+    category: "Summer Essentials Fashion", // Category added
   },
   {
     id: 8,
@@ -218,6 +225,7 @@ export const allProducts = [
     price: 3500,
     description:
       "A soft and feminine ballerina-inspired top, designed to be lightweight and flowy for maximum comfort.",
+    category: "Floral Spring Collection", // Category added
   },
   {
     id: 9,
@@ -226,6 +234,7 @@ export const allProducts = [
     price: 4000,
     description:
       "Classic wide-leg jeans that offer comfort and style with a vintage touch. Perfect for a relaxed, casual look.",
+    category: "Cozy Fall Collection", // Category added
   },
   {
     id: 10,
@@ -234,6 +243,7 @@ export const allProducts = [
     price: 3000,
     description:
       "A versatile lining shirt with a sleek, modern design. Great for layering or wearing alone.",
+    category: "Cozy Fall Collection", // Category added
   },
   {
     id: 11,
@@ -242,6 +252,7 @@ export const allProducts = [
     price: 2200,
     description:
       "A chic and lightweight shrug that adds a stylish layer to any outfit. Ideal for cooler evenings or adding flair to your look.",
+    category: "Floral Spring Collection", // Category added
   },
   {
     id: 12,
@@ -250,6 +261,7 @@ export const allProducts = [
     price: 4000,
     description:
       "A bold cropped blazer in a lovely pink hue, offering a fresh take on classic professional wear.",
+    category: "Summer Essentials Fashion", // Category added
   },
   {
     id: 13,
@@ -258,6 +270,7 @@ export const allProducts = [
     price: 3000,
     description:
       "A luxurious silk skirt with a ruched detail for added texture and style. Perfect for formal events or a night out.",
+    category: "Summer Essentials Fashion", // Category added
   },
   {
     id: 14,
@@ -266,6 +279,7 @@ export const allProducts = [
     price: 2300,
     description:
       "A warm and cozy long winter vest, designed to keep you stylish and comfortable in colder weather.",
+    category: "Cozy Fall Collection", // Category added
   },
   {
     id: 15,
@@ -274,6 +288,7 @@ export const allProducts = [
     price: 4000,
     description:
       "A stylish winter set including matching pieces, perfect for layering and staying warm while looking great.",
+    category: "Cozy Fall Collection", // Category added
   },
   {
     id: 16,
@@ -282,6 +297,7 @@ export const allProducts = [
     price: 1100,
     description:
       "A simple and comfortable casual tee that is a wardrobe staple. Perfect for everyday wear.",
+    category: "Summer Essentials Fashion", // Category added
   },
 ];
 

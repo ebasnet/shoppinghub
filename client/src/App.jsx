@@ -6,6 +6,7 @@ import Login from "./pages/login/Login";
 import AllProducts from "./pages/all products/AllProducts";
 import SingleProduct from "./pages/singleProduct/SingleProduct";
 import Cart from "./pages/cart/Cart";
+import CategoryPage from "./components/categories/CategoryPage";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/products" element={<AllProducts />} />
         <Route path="/products/:id" element={<SingleProduct />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/category/:categoryName" element={<CategoryPage />} />
       </Routes>
     </Router>
   );

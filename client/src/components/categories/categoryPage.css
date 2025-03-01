@@ -1,0 +1,104 @@
+/* CategoryPage.css */
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+  }
+  
+  .product {
+    /* background-color: #f9f9f9; */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .product:hover {
+    transform: translateY(-10px);
+  }
+  
+  .product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .product h3 {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    color: #333;
+  }
+  
+  .product p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  .product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    background-color: teal;  /* Teal background */
+    color: white;  /* White icon color */
+    font-weight: bold;
+    font-size: 1.2rem;  /* Slightly larger font size for better visibility */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 15px;  
+    transition: background-color 0.3s ease;
+  }
+  
+  .icon:hover {
+    background-color: #ff4500;
+  }
+  
+  .icon svg {
+    margin-right: 8px;
+    font-size: 30px;
+  }
+  
+  .product-info button {
+    width: 48%;
+  }
+  
+  .product-info a {
+    text-decoration: none;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 40px;
+    color: #333;
+  }
+  
+  /* Responsiveness for smaller screens */
+  @media (max-width: 768px) {
+    .products-container {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  
+    .product h3 {
+      font-size: 1rem;
+    }
+  
+    .product-info button {
+      font-size: 0.85rem;
+    }
+  }
+  
