@@ -1,4 +1,8 @@
+.title{
+  font-size: 30px;
+  padding: 20px;
 
+}
 .products-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));

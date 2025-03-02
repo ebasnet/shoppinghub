@@ -5,6 +5,7 @@ import Navbar from "../navbar/Navbar";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/cartSlice";
 import "./categoryPage.css";
+import Announcement from "../announcement/Announcement";
 
 const CategoryPage = () => {
   const { categoryName } = useParams();
@@ -25,8 +26,9 @@ const CategoryPage = () => {
 
   return (
     <div>
+      <Announcement />
       <Navbar />
-      <h1>{categoryName} Products</h1>
+      <h1 className="title">{categoryName} Products</h1>
       <div className="products-container">
         {categoryProducts.length > 0 ? (
           categoryProducts.map((product) => (
