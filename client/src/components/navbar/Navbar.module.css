@@ -1,15 +1,16 @@
-/* Navbar.module.css */
 .navbar-container {
   width: 100%;
   background-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  position: sticky; /* Change from absolute to sticky */
+  top: 40px; /* Adjust the top value based on the height of the announcement bar */
+  z-index: 999; /* Make sure the navbar stays below the announcement bar */
 }
 
 .navbar-wrapper {
+  width: inherit;
   display: flex;
+  background-color: #ffffff;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
@@ -51,7 +52,7 @@
 }
 
 .navbar-center {
-text-align: center;
+  text-align: center;
   flex: 1;
 }
 
@@ -102,7 +103,6 @@ text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 150px;
   z-index: 100;
-
 }
 
 .dropdown-item {
@@ -116,6 +116,7 @@ text-align: center;
   background-color: teal;
   color: white;
 }
+
 .cart-badge {
   background-color: #e74c3c;
   color: white;
